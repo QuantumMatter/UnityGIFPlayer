@@ -1,0 +1,6 @@
+#!/bin/bash
+echo hello world
+mkdir Converted
+for i in *gif; do
+sips -s format png $i --out Converted/$i.png;
+done
